@@ -3,8 +3,9 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse('Home page')
+    context = 
+    return render(request, 'main_app/index.html')
 
 
 def about(request):
-    return HttpResponse('Info page')
+    return render(request, 'main_app/about.html')
